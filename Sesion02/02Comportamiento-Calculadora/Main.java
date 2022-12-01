@@ -50,9 +50,13 @@ public class Main {
         case "d":
           System.out.println("Ingresa un número:");
           entrada = sc.nextFloat();
-          Comando comando4 = new ComandoDividir(resultado, entrada);
-          resultado = comando4.ejecutar();
-          pila.add(comando4);
+          if(entrada != 0){
+              Comando comando4 = new ComandoDividir(resultado, entrada);
+              resultado = comando4.ejecutar();
+              pila.add(comando4);
+          }else{
+             System.out.println("No se puede dividir entre cero.");
+          }
           break;
 
         case "e":
