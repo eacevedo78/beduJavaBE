@@ -8,4 +8,6 @@ public interface IPokemonService {
     public List<Pokemon> getAll();
 
     public Pokemon getOneByNumber(int number);
+
+    public Pokemon create(Pokemon pokemon);
 }

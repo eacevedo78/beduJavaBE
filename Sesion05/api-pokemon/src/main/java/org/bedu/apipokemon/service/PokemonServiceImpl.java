@@ -23,4 +23,9 @@ public class PokemonServiceImpl implements IPokemonService {
     public Pokemon getOneByNumber(int number){
         return repository.findOneByNumber(number);
     }
+
+    @Override
+    public Pokemon create(Pokemon pokemon){
+        return repository.save(pokemon);
+    }
 }

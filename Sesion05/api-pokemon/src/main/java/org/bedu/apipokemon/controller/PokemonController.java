@@ -2,9 +2,8 @@ package org.bedu.apipokemon.controller;
 
 import org.bedu.apipokemon.entity.Pokemon;
 import org.bedu.apipokemon.service.IPokemonService;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.http.HttpStatus;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -15,7 +14,8 @@ public class PokemonController {
     public PokemonController(IPokemonService service){
         this.service=service;
     }
-    @GetMapping("/getAllPokemon")
+    @GetMapping("/pokemon")
+    @ResponseStatus(HttpStatus.OK)
     public List<Pokemon> getAll(){
         return this.service.getAll();
     }
@@ -23,5 +23,11 @@ public class PokemonController {
     @GetMapping("/getOnePokemon/{number}")
     public Pokemon getOneByNumber(@PathVariable("number") int number){
         return this.service.getOneByNumber(number);
+    }
+
+    @PostMapping("/pokemon")
+    @ResponseStatus(HttpStatus.CREATED)
+    public Pokemon create(@RequestBody Pokemon pokemon){
+        return service.create(pokemon);
     }
 }
