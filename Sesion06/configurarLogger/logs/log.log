@@ -1,0 +1,9 @@
+[[33m14/12/2022 10:01:57 p. m.[0;39m] [$logger] [INFO ] - Starting LoggerApplication using Java 17.0.5 with PID 23515 (/home/emmanuel/beduJavaBE/Sesion06/configurarLogger/target/classes started by emmanuel in /home/emmanuel/beduJavaBE/Sesion06/configurarLogger)
+[[33m14/12/2022 10:01:57 p. m.[0;39m] [$logger] [INFO ] - No active profile set, falling back to 1 default profile: "default"
+[[33m14/12/2022 10:01:58 p. m.[0;39m] [$logger] [INFO ] - Started LoggerApplication in 0.502 seconds (process running for 0.691)
+[[33m14/12/2022 10:01:58 p. m.[0;39m] [$logger] [WARN ] - El numero -4 NO es primo
+[[33m14/12/2022 10:01:58 p. m.[0;39m] [$logger] [ERROR] - El numero -4 es negativo
+[[33m14/12/2022 10:01:58 p. m.[0;39m] [$logger] [INFO ] - Aplicacion de Spring Boot inicializada
+[[33m14/12/2022 10:01:58 p. m.[0;39m] [$logger] [WARN ] - El metodo debe recibir una cadena no vacia
+[[33m14/12/2022 10:01:58 p. m.[0;39m] [$logger] [ERROR] - Hubo un problema critico en la app
+[[33m14/12/2022 10:01:58 p. m.[0;39m] [$logger] [DEBUG] - App Demo de loggers
